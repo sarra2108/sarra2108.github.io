@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3f85e339c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+          
+            <ul id="sidemenu">
+                <li><a href="#hader">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            
+            <h1>Hello, I'm <Span>Sarra</Span></h1>
+            <p style="font-size: 20px">If you have an internship position for me, let me know. 
+                <br>I'd love to have chat with you :)</p>
+
+        </div>
+        </div>
+</div>
+<div id="about">
+    <div class="container">
+       
+        <div class="row">
+            
+                <div class="about-col-1 col2">
+                    <img src="images/about.jpg">
+
+                </div>
+                <div class="about-col-2">
+                  
+                    <h1 class="sub-title">About me</h1>
+                    <p>My passion for software engineering drives me to continuously seek opportunities to expand my knowledge in this field. 
+                        
+                        I am enthusiastic about embracing new challenges and growing as a software engineer, and I am open to collaborating with others on innovative projects that can foster my learning and contribute to the tech community.
+                        </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links " onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages</span><br>C/Python/Java</li>
+                            <li><span>Front-end web Development</span><br>HTML/CSS/JavaScript/React.js</li>
+                            <li><span>Back-end web Development</span><br>HTTP/AJAX/JASON/APIs/Node.js/Express.js </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            
+                            <li><span >Web developer assistant (CO-OP)</span></li>
+                           
+                            <li><span> web Development</span><br>Drupal7/Drupal9/SiteImprove</li>
+                            <li><span>Software Development</span><br>KOHA : open-source library management system</li>
+                            
+                        </ul>
+                    </div>
+                
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>University of Ottawa</span></li>
+                        <li>Made the Dean's list and won two merit scholarships.</li>
+                        <li>CGPA: 9.8 (out of 10)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---services-->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+           <div  >
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            
+           <a href="#"onclick="showPopup()">Learn more</a>
+        </div>
+        <div >
+            <i class="fa-solid fa-crop"></i>
+            <h2>software development</h2>
+            
+            
+           <a href="#"onclick="showPopup()">Learn more</a>
+        </div>
+        <div  >
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+           <a href="#"onclick="showPopup()">Learn more</a>
+        </div>
+        </div>
+    </div>
+</div>
+<!---portfolio-->
+
+<div class="popup" id="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <p id="popup-title">Still not ready, Come back soon!</p>
+    
+  </div>
+  
+<div id="portfolio">
+    
+    <div class="container">
+        <h1 class="sub-title">My work</h1>
+        <br>
+        <p class="work1"> Well the first one is this website ;).</p>
+        <div class="work-list">
+            
+            <div class="work" >
+                <img src="images/logo.png">
+                <div class="layer">
+                    <h3>Housing service website </h3>
+                    <a href="https://internull-inc.github.io/index.html"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            
+            
+            <div class="work" onclick="showPopup()">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>image recognition App </h3>
+                    <a><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work"  >
+                <img src="images/coding.jpg">
+                <div class="layer">
+                    <h3>Java projects</h3>
+                    
+                    <a href="https://github.com/sarra2108/Java-projects.git"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+       
+        
+        <a href="#" class="btn" onclick="showPopup()">See more</a>
+    </div>
+</div>
+<!--contact-->
+<div class="main-container">
+<div id="contact">
+    <div class="container"> 
+        
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>ssass058@uottawa.ca</p>
+                <p><i class="fa-solid fa-square-phone"></i>6138785832</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/sassisarra/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sarra2108"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/Sarra Sassi.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right" >
+                <form name="submit-to-google-sheet" action="">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Sumbit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="about-col-1">
+        <img src="images/bckg2.jpg">
+        </div>
+    
+</div>
+</div>
+<div class="copyright">
+    <p>© Copyright 2023. Made by Sarra Sassi</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
